@@ -1,0 +1,2 @@
+go test fuzz v1
+string("(?i)00։000")
