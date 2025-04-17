@@ -16,7 +16,8 @@ package regexpand_test
 
 import (
 	"fmt"
-	"regexpand"
+
+	"github.com/google/regexpand"
 )
 
 func ExampleExpand() {

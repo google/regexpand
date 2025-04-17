@@ -1,4 +1,4 @@
-module regexpand
+module github.com/google/regexpand
 
 go 1.23
 
