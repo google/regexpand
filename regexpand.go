@@ -516,7 +516,12 @@ func (c cord) JoinedWith(c2 cord) cord {
 	return cord{ss: res}
 }
 
-func (c cord) String() string { return strings.Join(c.ss, "") }
+func (c cord) String() string {
+	if len(c.ss) == 1 {
+		return c.ss[0]
+	}
+	return strings.Join(c.ss, "")
+}
 
 func cordsToStrings(cs []cord) []string {
 	if len(cs) == 0 {
